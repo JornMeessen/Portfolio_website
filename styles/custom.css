@@ -1,0 +1,600 @@
+/* stijl algemeen */
+  *{ 
+    margin: 0px; 
+  }
+
+  @font-face {
+    font-family: hoefler text black;
+    src: url('../fonts/hoefler-text-black.ttf');
+  }
+
+  @font-face {
+    font-family: Sumana;
+    src: url('../fonts/Sumana-Bold.ttf');
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a{
+    color: #0f1114;
+  }
+
+  h1{
+    font-family: 'Sumana', serif;
+    font-size: 3em;
+    line-height: 60px;
+  }
+
+  h2{ 
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-left: 3em;
+  }
+
+  .overmij .column1 h2{
+    text-transform: none;
+    margin-left: 0;
+  }
+
+  h3{
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 1.8em;
+    line-height: 39px;
+  }
+
+  .overmij h3{
+    width: 100%;
+  }
+
+  footer h3{
+    font-family: Sumana;
+    font-size: 2em;
+    line-height: 60px;
+  }
+
+  h4{
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 1.5em;
+    line-height: 39px;
+  }
+
+  .overmij h4{
+    font-size: 1.3em;
+    line-height: 36px;
+  }
+
+  h5{ 
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 1.2em;
+    line-height: 34px;
+  }
+
+  .overmij main h5{
+    font-family: Sumana;
+    font-size: 1.4em;
+  }
+
+  p{ 
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 35px;
+  }
+
+  footer p{
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+
+  h6{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 0.9em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 7px 15px;
+    border-radius: 28px;
+    background-color: #ececec;
+    display: inline-block;
+    margin: 1em 1em 1.5em 0em;
+  }
+
+  .overmij h6{
+    margin-bottom: 0.5em;
+    background-color: #1f1f1f;
+    color: white;
+  }
+
+   a{
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s background-color;
+  }
+
+  nav, header, #overMij, .backgroundColor{
+    background-color: #FAFAFA;
+  }
+
+  .home main h2:before, .project main > .other-projects h2:before , footer #contactTitel:before{
+    content: "\2014";
+    position: absolute;
+    margin-left: -1em;
+    font-weight: 100;
+    font-size: 3em;
+    margin-top: -19px;
+    color: currentColor;
+  }
+
+  /* navigation */
+  nav{
+    line-height: 4em ;
+    padding: 0em 10%;
+    position: absolute;
+    justify-content: space-between !important;
+    z-index: 1;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  li {
+    line-height: 40px;
+    width: 100px;
+    font-size: 1em;
+    display: inline-block;
+  }
+
+  nav > ul > li {
+    text-align: center;
+  }
+
+  nav > ul > li > a {
+    padding-left: 0;
+  }
+
+  nav > ul > li svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  nav ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: none;
+    width: 240px;
+    height: 11em;
+    border-radius: 4px;
+    background-color: white/*#FAFAFA*/;
+
+  }
+
+  nav ul li ul li{
+    width: 18em;
+    text-align: start;
+  }
+
+  ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    display: table-cell;
+    padding-left: 1em;
+  }
+
+  .active-page{
+    line-height: 25px;
+    display: inline-block;
+    border-bottom: 3px solid #FAB415;
+    font-weight: 700;
+  }
+
+  .dropdown .active-page{
+    border-bottom: 0px;
+  }
+
+  nav ul li a:hover {
+    color: #003fc1;
+  }
+
+  .active-page:hover{
+    color: #0f1114;
+  }
+
+  nav ul li a:active {
+    color: #0b3d88;
+  }
+
+  #logo{
+    font-family: 'hoefler text black';
+    font-size: 2.5em;
+    line-height: 1.6em;
+    transition-duration: 0.4s;
+    transition-property: color;
+  }
+
+  #logo:hover{
+    color: #525050;
+  }
+
+  /*header*/
+  header{
+    padding: 8em 10% 4em 10%;
+  }
+
+  header h4{
+    width: 57%;
+    padding: 1em 0em 3em;
+  }
+
+  /* main */
+  main section{
+    padding: 2em 10% 0em 10%;
+  }
+
+  main #overMij{
+    padding-bottom: 4em;
+  }
+
+  main #overMij p{
+    width: 44em;
+  }
+
+  main #overMij a{
+    margin-top: 2em;
+  }
+
+  main h2, footer #contactTitel {
+    list-style-type: none;
+    padding-bottom: 3em;
+  }
+
+  main li, footer #contactTitel li{
+    width: 100%;
+  }
+
+  article{
+    padding: 0em 0em 7em;
+  }
+
+  article.flex {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: inherit;
+  }
+
+  main article img{
+    width: 95%;
+  }
+
+  .column1, .column2{
+    width: 50%;
+  }
+
+  /* footer */
+  footer ul li svg{
+    width: 35px;
+    height: 35px;
+  }
+
+  footer #socials{
+    line-height: 6em;
+  }
+
+  footer #socials a{
+     transition-duration: 0.4s;
+    transition-property: color;
+  }
+
+  footer #socials a:hover{
+    color: #1560fa;
+  }
+
+  footer #socials a:active{
+    color: #003fc1;
+  }
+
+  footer{
+    padding: 2em 10% 2em 10%;
+    border-bottom: 2em solid #0f1114;
+  }
+
+  .mail:hover{
+    color: #1560fa;
+  }
+
+  .mail:active{
+    color: #003fc1;
+  }
+
+  /* Buttons */
+  .button{
+    padding: 1em 1em;
+    width: fit-content;
+    font-size: 1em;
+    margin-right: 1.5em;
+    cursor: pointer;
+    font-family: lato;
+    font-weight: 700;
+    display: inline-block;
+  }
+
+  #werk .button{
+    display: block;
+    margin-top: 1.5em;
+  }
+
+    /* primary button */
+    .primary-button{
+      background-color: #1560FA;
+      border-radius: 4px;
+      color: white;
+      border: none;
+      transition-duration: 0.4s;
+      transition-property: transform;
+    }
+
+ 	.primary-button:hover{
+    	background-color: #0054ff;
+      -webkit-transform: scale(0.95);
+      transform: scale(0.95);
+  	}
+
+  	.primary-button:active{
+   	 	background-color: #003fc1;
+  	}
+
+  
+    /* second button */
+    .second-button{
+      background-color: rgba(5, 84, 181, 0.8);
+      border-radius: 4px;
+      color: white;
+      border: none;
+      transition-duration: 0.4s;
+      transition-property: transform;
+    }
+
+  	.second-button:hover{
+    	background-color: rgba(5, 84, 181, 0.90);
+    	-webkit-transform: scale(0.95);
+    	transform: scale(0.95);
+  	}
+
+  	.second-button:active{
+    	background-color: rgba(5, 84, 181, 1.0);
+  	}
+
+    /* ghost button */
+    .ghost-button{
+      border: 1px solid #d4d4d4;
+      background-color: white;
+      border-radius: 4px;
+      transition-duration: 0.4s;
+      transition-property: transform;
+    }
+
+    .ghost-button:hover{
+      -webkit-transform: scale(0.95);
+      transform: scale(0.95);
+      background-color: #efefef;
+    }
+
+  .ghost-button:active{
+    border: 1px solid #0E1114;
+    background-color: rgba(208, 208, 208, 1);
+  }
+
+  #GoToTop {
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer; 
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  #GoToTop:hover {
+    color: #FAB415;
+  }
+
+  #GoToTop:active {
+  background-color: #EBEBEB;
+  }
+
+  /* Hover image */
+  img{
+    width: 100%;
+    -webkit-box-shadow: 0px 4px 26px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 0px 4px 26px 0px rgba(219,219,219,1);
+    box-shadow: 0px 4px 26px 0px rgba(219,219,219,1);
+  } 
+
+  .hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+
+  .hover:hover {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+/* stijl home */ 
+
+  /* main */
+  .home main h5{
+    width: 80%;
+  }
+
+  .home main .column1{
+    padding-top: 2em;
+  }
+
+  .home article:nth-child(odd).flex{
+    flex-flow: row-reverse;
+  }
+
+  .home article:nth-child(odd) .column1{
+    padding-left: 5em;
+  }
+
+  .home article:nth-child(odd) .column1 h5 {
+    width: 85%;
+  }
+
+  .home article:nth-child(even) img{
+    float: right;
+  }
+
+/* stijl project pagina's */
+  
+  .project h1{
+    text-align: center;
+  }
+
+  /* header */
+  .project header{
+    width: 40%;
+  }
+
+  .project header{
+    padding: 8em 30% 3em 30%;
+  }
+
+  /* main */
+  .project .omschrijving{
+     padding-top: 1em;
+  }
+
+  .project h1{
+    margin-top: 0.4em;
+  }
+
+  .project main .column1{
+    padding-top: 0;
+    width: 70%;
+  }
+
+  .project main .column2{
+    padding-top: 0;
+    width: 30%;
+    padding-left: 2em;
+  }
+
+  .project main li{
+    line-height: normal;
+  }
+
+  .project main li:nth-child(2), .project main li:nth-child(3){
+    padding-top: 2em;
+  }
+
+  .project main section{
+    padding: 2em 25% 0em 30%;
+    width: 45%;
+  }
+
+  .project .other-projects{
+   padding: 2em 10% 2em 10%;
+   width: 80% !important;
+  }
+
+  .project .other-projects div.flex{
+    justify-content: space-between;
+  }
+
+  .project .other-projects article{
+    width: 45%;
+    background-color: #FAFAFA;
+    padding: 2em 1em;
+    height: auto;
+    display: flex;
+  }
+
+  .project .other-projects article img{
+    width: 35%;
+  }
+
+  .project main .omschrijving h2{
+    list-style-type: none;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+
+  .project .other-projects h5{
+    font-weight: 800;
+    padding: 1em 0em 0em 1em;
+  }
+
+  .project .other-projects h6{
+    margin: 1em 0em 1.5em 1em;
+  }
+
+  .project #projects{
+    cursor: pointer;
+  }
+
+  /* procesbar */
+  .progress-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+    width: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .progress-bar {
+    width: 0%;
+    height: 8px;
+    background-color: #1560FA;
+    -webkit-transition: width .25s ease;
+    transition: width .25s ease; 
+  }
+
+/* stijl over mij pagina's */
+  
+  /* header */
+  .overmij header .column2 img{
+    width: 80%;
+    float: right;
+    margin-top: 2em;
+  }
+
+  .overmij header h4{
+    width: 100%;
+  }
+
+  .overmij main section article{
+    width: 33em;
+  }
+
+  .overmij main article{
+    padding: 2em 0em 2em;
+  }
+
+  .overmij main .column2 p{
+    line-height: 35px;
+    margin-top: 0.8em;
+  }
+
+  .overmij main section:nth-child(2){
+    padding-bottom: 2em;
+  }
+
