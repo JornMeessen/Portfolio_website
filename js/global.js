@@ -1,7 +1,7 @@
 // De javascipt die over de hele website aanwezig is 
 window.onload = function(){
   scrollFunction();
-  // menu();
+  menu();
 
   var projectPage = document.getElementById('project');
   if(projectPage){
@@ -61,14 +61,11 @@ window.addEventListener('scroll', onScroll);
 };
 
 
-// function menu(){
+function menu(){ 
+    let mainNav = document.getElementById('menu');
+    let navBarToggle = document.getElementById('toggle');
 
-//   document.getElementsByClassName("toggleMenu")[0].onclick = function(){
-//     document.getElementById("myNav").style.height = "100%";
-//   }
-
-//   document.getElementsByClassName("closebtn")[0].onclick = function(){
-//     document.getElementById("myNav").style.height = "0%"; 
-//   }
-
-// };
+    navBarToggle.addEventListener('click', function () {
+      mainNav.classList.toggle('active');
+    });
+};

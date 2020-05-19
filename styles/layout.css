@@ -17,7 +17,7 @@ footer{         grid-area: footer;  }
 
 
 .box{
-  width: 80%;
+  width: 100%;
   justify-self: center;
 }
 
@@ -54,6 +54,9 @@ footer{         grid-area: footer;  }
     "footer footer footer footer footer footer footer footer"
   }
 
+  .box{
+    width: 80%;
+  }
 
 }
 

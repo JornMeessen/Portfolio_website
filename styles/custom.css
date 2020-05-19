@@ -19,8 +19,13 @@
 
   h1{
     font-family: 'Sumana', serif;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 60px;
+  }
+
+  .overmij h1{
+    line-height: 43px;
+    margin-bottom: 1em;
   }
 
   h2{ 
@@ -45,54 +50,61 @@
 
   .overmij h3{
     width: 100%;
+    font-size: 1.6em;
   }
 
   footer h3{
     font-family: Sumana;
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 60px;
   }
 
   h4{
     font-family: Lato;
     font-weight: 100;
-    font-size: 1.5em;
-    line-height: 39px;
+    font-size: 1.2em;
+    line-height: 35px;
+  }
+
+  header h4{
+    /*width: 57%;*/
+    padding-bottom: 3em;
   }
 
   .overmij h4{
-    font-size: 1.3em;
-    line-height: 36px;
+    font-size: 1.1em;
+    line-height: 32px;
   }
 
   h5{ 
     font-family: Lato;
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 34px;
   }
 
   .overmij main h5{
     font-family: Sumana;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    line-height: 47px;
   }
 
   p{ 
     font-family: 'Lato';
     font-weight: 300;
-    font-size: 1.1em;
-    line-height: 35px;
+    font-size: 1em;
+    line-height: 30px;
   }
 
   footer p{
-    font-size: 0.9em;
+    font-size: 0.7em;
     line-height: 25px;
   }
 
   h6{
     font-family: 'Lato';
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 0.7em;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -131,9 +143,10 @@
 
   /* navigation */
   nav{
+    width: 92%;
     line-height: 4em ;
-    padding: 0em 10%;
-    position: absolute;
+    padding: 0em 6%;
+    /*position: absolute;*/
     justify-content: space-between !important;
     z-index: 1;
   }
@@ -147,13 +160,18 @@
 
   li {
     line-height: 40px;
-    width: 100px;
+    width: 270px;
     font-size: 1em;
     display: inline-block;
   }
 
+  nav ul{
+    list-style-type: none;
+    display: none;
+  }
+
   nav > ul > li {
-    text-align: center;
+    margin: 15px auto;
   }
 
   nav > ul > li > a {
@@ -189,6 +207,20 @@
     display: table-cell;
     padding-left: 1em;
   }
+
+
+  #toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+        .active {
+            display: block;
+        }
+
 
   .active-page{
     line-height: 25px;
@@ -227,30 +259,37 @@
 
   /*header*/
   header{
-    padding: 8em 10% 4em 10%;
-  }
-
-  header h4{
-    width: 57%;
-    padding: 1em 0em 3em;
+    /*padding: 8em 10% 4em 10%;*/
+    width: 88% !important;
+    padding: 10% 10%; 
   }
 
   /* main */
-  main section{
-    padding: 2em 10% 0em 10%;
+  #werk{
+    width: 88%;
+    padding: 10% 7%;
   }
 
   main #overMij{
-    padding-bottom: 4em;
+    width: 80%;
+    padding: 10% 10%;
   }
 
   main #overMij p{
-    width: 44em;
+    width: 100%;
   }
 
   main #overMij a{
     margin-top: 2em;
   }
+
+ /* main .column1{
+    order: 2;
+  }
+
+  main .column2{
+    order: 1;
+  }*/
 
   main h2, footer #contactTitel {
     list-style-type: none;
@@ -267,16 +306,16 @@
 
   article.flex {
     display: flex;
-    flex-flow: row;
+    flex-flow: column-reverse;
     flex-wrap: inherit;
   }
 
   main article img{
-    width: 95%;
+    width: 100%;
   }
 
   .column1, .column2{
-    width: 50%;
+    width: 100%;
   }
 
   /* footer */
@@ -303,8 +342,13 @@
   }
 
   footer{
-    padding: 2em 10% 2em 10%;
     border-bottom: 2em solid #0f1114;
+    width: 80% !important;
+    padding: 10% 10%;
+  }
+
+  footer li{
+    width: 78px;
   }
 
   .mail:hover{
@@ -317,10 +361,9 @@
 
   /* Buttons */
   .button{
-    padding: 1em 1em;
+    padding: 1em 0.5em;
     width: fit-content;
     font-size: 1em;
-    margin-right: 1.5em;
     cursor: pointer;
     font-family: lato;
     font-weight: 700;
@@ -361,6 +404,8 @@
       border: none;
       transition-duration: 0.4s;
       transition-property: transform;
+      width: 10em;
+      text-align: center;
     }
 
   	.second-button:hover{
@@ -417,9 +462,9 @@
   /* Hover image */
   img{
     width: 100%;
-    -webkit-box-shadow: 0px 4px 26px 0px rgba(219,219,219,1);
-    -moz-box-shadow: 0px 4px 26px 0px rgba(219,219,219,1);
-    box-shadow: 0px 4px 26px 0px rgba(219,219,219,1);
+    -webkit-box-shadow: 0px 4px 14px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 0px 4px 14px 0px rgba(219,219,219,1);
+    box-shadow: 0px 4px 14px 0px rgba(219,219,219,1);
   } 
 
   .hover {
@@ -437,20 +482,8 @@
 /* stijl home */ 
 
   /* main */
-  .home main h5{
-    width: 80%;
-  }
-
   .home main .column1{
     padding-top: 2em;
-  }
-
-  .home article:nth-child(odd).flex{
-    flex-flow: row-reverse;
-  }
-
-  .home article:nth-child(odd) .column1{
-    padding-left: 5em;
   }
 
   .home article:nth-child(odd) .column1 h5 {
@@ -469,31 +502,29 @@
 
   /* header */
   .project header{
-    width: 40%;
+    padding: 3em 10%;
   }
 
-  .project header{
-    padding: 8em 30% 3em 30%;
+  .project article.flex{
+    flex-flow: column;
+  }
+
+  .project article{
+    padding: 0em 0em 5em;
   }
 
   /* main */
-  .project .omschrijving{
-     padding-top: 1em;
-  }
-
   .project h1{
     margin-top: 0.4em;
   }
 
   .project main .column1{
-    padding-top: 0;
-    width: 70%;
+    width: 100%;
   }
 
   .project main .column2{
-    padding-top: 0;
-    width: 30%;
-    padding-left: 2em;
+    width: 100%;
+    padding-top: 2em;
   }
 
   .project main li{
@@ -505,12 +536,12 @@
   }
 
   .project main section{
-    padding: 2em 25% 0em 30%;
-    width: 45%;
+    padding: 3em 8% 0%;
+    width: 88%;
   }
 
   .project .other-projects{
-   padding: 2em 10% 2em 10%;
+   padding: 2em 10% 1em 10%;
    width: 80% !important;
   }
 
@@ -519,15 +550,15 @@
   }
 
   .project .other-projects article{
-    width: 45%;
+    width: 100%;
     background-color: #FAFAFA;
-    padding: 2em 1em;
+    padding: 1em 1em;
     height: auto;
-    display: flex;
+    margin-bottom: 2em;
   }
 
   .project .other-projects article img{
-    width: 35%;
+    width: 100%;
   }
 
   .project main .omschrijving h2{
@@ -538,11 +569,7 @@
 
   .project .other-projects h5{
     font-weight: 800;
-    padding: 1em 0em 0em 1em;
-  }
-
-  .project .other-projects h6{
-    margin: 1em 0em 1.5em 1em;
+    padding: 1em 0em 0em;
   }
 
   .project #projects{
@@ -570,31 +597,35 @@
 
 /* stijl over mij pagina's */
   
-  /* header */
   .overmij header .column2 img{
-    width: 80%;
-    float: right;
+    margin: 2em 0em;
+  }
+
+  .overmij .button{
+    margin-right: 0.8em;
+  }
+
+  .overmij main section:nth-child(1), .overmij main section:nth-child(2){
+    padding: 10% 7%;
+    width: 90%;
+  }
+
+
+  .overmij article{
+    padding: 0em 0em 4em;
+  }
+
+   .overmij main p{
+    padding-top: 1em;
+  }
+
+  .overmij main section:nth-child(2) .button{
+    display: block;
     margin-top: 2em;
   }
 
-  .overmij header h4{
-    width: 100%;
+  .overmij main section:nth-child(2) article{
+    padding: 0em 0em 2em;
   }
 
-  .overmij main section article{
-    width: 33em;
-  }
-
-  .overmij main article{
-    padding: 2em 0em 2em;
-  }
-
-  .overmij main .column2 p{
-    line-height: 35px;
-    margin-top: 0.8em;
-  }
-
-  .overmij main section:nth-child(2){
-    padding-bottom: 2em;
-  }
-
+/**/
